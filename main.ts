@@ -11,7 +11,8 @@ function curtainUp () {
 input.onButtonPressed(Button.A, function () {
     curtainUp()
     microIoT.microIoT_clear()
-    microIoT.microIoT_showUserText(0, "Curtain is moving up")
+    microIoT.microIoT_showUserText(0, "Curtain is")
+    microIoT.microIoT_showUserText(1, "moving up")
 })
 function curtainDown () {
     microIoT.microIoT_ServoRun(microIoT.aServos.S1, 180)
@@ -21,7 +22,8 @@ function curtainDown () {
 input.onButtonPressed(Button.B, function () {
     curtainDown()
     microIoT.microIoT_clear()
-    microIoT.microIoT_showUserText(0, "Curtain is moving down")
+    microIoT.microIoT_showUserText(0, "Curtain is")
+    microIoT.microIoT_showUserText(1, "moving down")
 })
 let Mode = ""
 let wifi_name = "izowifi"
