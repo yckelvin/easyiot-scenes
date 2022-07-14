@@ -11,12 +11,13 @@ function curtainUp () {
 }
 input.onButtonPressed(Button.A, function () {
     if (curtainIsUp) {
+        microIoT.microIoT_clear()
         microIoT.microIoT_showUserText(0, "Curtain is up")
     } else {
-        curtainUp()
         microIoT.microIoT_clear()
         microIoT.microIoT_showUserText(0, "Curtain is")
         microIoT.microIoT_showUserText(1, "moving up")
+        curtainUp()
     }
 })
 function curtainDown () {
@@ -27,10 +28,10 @@ function curtainDown () {
 }
 input.onButtonPressed(Button.B, function () {
     if (curtainIsUp) {
-        curtainDown()
         microIoT.microIoT_clear()
         microIoT.microIoT_showUserText(0, "Curtain is")
         microIoT.microIoT_showUserText(1, "moving down")
+        curtainDown()
     } else {
         microIoT.microIoT_clear()
         microIoT.microIoT_showUserText(0, "Curtain is down")
