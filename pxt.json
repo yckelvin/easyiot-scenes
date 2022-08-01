@@ -1,5 +1,5 @@
 {
-    "name": "EasyIoT Scenes",
+    "name": "EasyIoT Scenes curtain control",
     "description": "",
     "dependencies": {
         "core": "*",
